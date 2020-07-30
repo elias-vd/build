@@ -207,6 +207,7 @@ BR2_TARGET_GENERIC_GETTY_PORT ?= $(if $(CFG_NW_CONSOLE_UART),ttyAMA$(CFG_NW_CONS
 BR2_PACKAGE_DROPBEAR ?= y
 BR2_TARGET_GENERIC_ROOT_PASSWD ?= "test" # ssh needs a password, otherwise would reject connections
 BR2_PACKAGE_LIBWEBSOCK ?= y
+BR2_ROOTFS_OVERLAY ?= $(BUILD_PATH)/rpi3/overlay
 
 # All BR2_* variables from the makefile or the environment are appended to
 # ../out-br/extra.conf. All values are quoted "..." except y and n.
